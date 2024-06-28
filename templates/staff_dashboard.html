@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0D2F2C;
+}
+
+.login-container {
+    background: #EEECDA;
+    /* padding: 2rem; */
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.35rem;
+    padding-left: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.button-group {
+    /* display: flex; */
+    justify-content: space-between;
+    /* margin-top: 1.5rem; */
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    background-color:  #0D2F2C;
+    margin-bottom: 10px;
+}
+
+.staff-login-btn {
+    background: #0D2F2C;
+    color: #ffffff;
+}
+
+.member-login-btn {
+    background: #0D2F2C;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+button{
+    background-color: #0D2F2C;
+}
+h2{
+    color: #0D2F2C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../static/Timmerman.png"Logo">
+    </div>
+    <div class="login-container">
+        <h2>STAFF DASHBOARD</h2>
+        <BR></BR>
+        <form>
+            <div class="button-group">
+                <div class="upper-bt">
+                <button onclick="window.location.href='/book_form'" type="button" class="btn staff-login-btn">Add Book</button>
+                <button onclick="window.location.href='/lend_form'" type="button" class="btn staff-login-btn">Lend Book</button>
+                </div>
+                <div>
+                <button onclick="window.location.href='/return_form'" type="button" class="btn staff-login-btn">Return Book</button>
+                <button onclick="window.location.href='/logout'" type="button" class="btn staff-login-btn">Logout</button>
+                <button onclick="window.location.href='/delete_member'" type="button" class="btn staff-login-btn">Delete Member</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<!-- <body>
+    <h1>Staff Dashboard</h1>
+    <button onclick="window.location.href='/book_form'">Add Book</button>
+    <button onclick="window.location.href='/lend_form'">Lend Book</button>
+    <button onclick="window.location.href='/return_form'">Return Book</button>
+    <button onclick="window.location.href='/logout'">Logout</button>
+</body> -->
+</html>

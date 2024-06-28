@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Dashboard</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0D2F2C;
+}
+
+.login-container {
+    background: #EEECDA;
+    /* padding: 2rem; */
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.35rem;
+    padding-left: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.button-group {
+    /* display: flex; */
+    justify-content: space-between;
+    /* margin-top: 1.5rem; */
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    background-color:  #0D2F2C;
+    margin-bottom: 10px;
+}
+
+.staff-login-btn {
+    background: #0D2F2C;
+    color: #ffffff;
+}
+
+.member-login-btn {
+    background: #0D2F2C;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+button{
+    background-color: #0D2F2C;
+}
+h2{
+    color: #0D2F2C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../static/Timmerman.png"Logo">
+    </div>
+    <div class="login-container">
+        <h2>MEMBER DASHBOARD</h2>
+        <BR></BR>
+        <form>
+            <div class="button-group">
+                <button onclick="window.location.href='/browse_books'" type="button" class="btn staff-login-btn">Browse Books</button>
+                <button onclick="window.location.href='/logout'" type="button" class="btn staff-login-btn">Logout</button>
+                
+            </div>
+        </form>
+    </div>
+</body>
+<!-- <body>
+    <h1>Member Dashboard</h1>
+    <button onclick="window.location.href='/browse_books'">Browse Books</button>
+    <button onclick="window.location.href='/logout'">Logout</button>
+</body> -->
+</html>

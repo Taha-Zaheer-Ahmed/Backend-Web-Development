@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Information</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0D2F2C;
+    padding: 2rem;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.card {
+    background: #EEECDA;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.card-synopsis {
+    margin-bottom: 1.5rem;
+    color: #555555;
+}
+
+.card-details p {
+    margin-bottom: 0.5rem;
+    color: #555555;
+}
+
+.card-details strong {
+    color: #333333;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-btn {
+    /* background: #007bff; */
+    background: #0D2F2C;
+    color: #ffffff;
+    /* align-content: center; */
+}
+
+.create-account-btn {
+    /* background: #28a745; */
+    background: #EEECDA;
+    /* margin-top: -42px;
+    float: right; */
+    color: #0D2F2C;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <!-- Replace 'logo.png' with your logo file -->
+        <img src="../static/Timmerman.png" alt="logo">
+    </div>
+    {% for book in books %}
+    <div class="card">
+        <h2 class="card-title">{{ book[1] }}</h2>
+        <p class="card-synopsis">{{ book[7] }}</p>
+        <div class="card-details">
+            <p><strong>Author:</strong> {{ book[2] }}</p>
+            <p><strong>Publisher:</strong> {{ book[3] }}</p>
+            <p><strong>ISBN:</strong> {{ book[0] }}</p>
+        </div>
+    </div>
+    {% endfor %}
+
+    <a href="/member_dashboard">
+        <button type="button" class="btn create-account-btn">Back to Dashboard</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Book Form Styling */
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right top, #050c37, #241e65, #4f2d94, #8237c1, #bd3beb);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 46px;
+    line-height: 120%;
+}
+
+label{
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 120%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    background: #592ed1;
+}
+
+button:hover{
+    opacity: 0.3;
+}
+
+textarea{
+    margin-bottom: 20px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 200px;
+}
+
+/* FORM STYLINGS */
+
+#book-form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#lend-form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+
+#member-form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#return-form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#staff-form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#staff-login{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}

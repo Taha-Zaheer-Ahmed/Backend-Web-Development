@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="static\styles.css"> -->
+    <title>Staff Login</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: #f0f2f5; */
+    background: #0D2F2C;
+}
+
+.login-container {
+    background: #EEECDA;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 1.5rem;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 48%;
+}
+
+.login-btn {
+    /* background: #007bff; */
+    background: #0D2F2C;
+    color: #ffffff;
+    /* align-content: center; */
+}
+
+.create-account-btn {
+    /* background: #28a745; */
+    background: #0D2F2C;
+    margin-top: -42px;
+    float: right;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../static/Timmerman.png"Logo">
+    </div>
+    <!-- <h1>Staff Login</h1> -->
+    <div class="login-container">
+        <!-- <div class="logo">
+           
+            <img src="logo.png" alt="Logo">
+        </div> -->
+        <form action="/staff_login" method="post" id = 'staff-login'>
+            <div class="input-group">
+                <label for="staff_id">Staff ID (CNIC):</label>
+                <input type="text" id="staff_id" name="staff_id" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn login-btn">Login</button>
+            </div>
+        </form>
+        <a href="/staff_form">
+            <button type="button" class="btn create-account-btn">Create Account</button>
+        </a>
+    </div>
+</body>
+<!-- <body>
+    
+    <form action="/staff_login" method="post" id = 'staff-login'>
+        <label for="staff_id">Staff ID (CNIC):</label>
+        <input type="text" id="staff_id" name="staff_id" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="/staff_form">Sign up here</a></p>
+</body> -->
+</html>
