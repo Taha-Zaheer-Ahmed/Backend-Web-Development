@@ -1,0 +1,108 @@
+/* style.css */
+
+/* General styles */
+body {
+  background-image: url('image.jpg');
+  font-family: 'Arial', sans-serif;
+  background-size: cover;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game {
+  width: 60%;
+  max-height: 500px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0px);
+  transition: transform 0.3s ease;
+}
+
+#game:hover {
+  transform: scale(1.05);
+}
+
+#text {
+  background: rgba(0, 0, 0, 0.8);
+  color: #f0f0f0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px 20px;
+}
+
+button {
+  background: linear-gradient(45deg, #1f4037, #99f2c8);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #34e89e, #0f3443);
+  transform: translateY(-3px);
+}
+
+#stats, #monsterStats {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+#stats {
+  border: 1px solid #34e89e;
+}
+
+#monsterStats {
+  border: 1px solid #ff4b2b;
+  display: none;
+}
+
+.stat {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+strong {
+  color: #ffeb3b;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px #34e89e;
+  }
+  50% {
+    box-shadow: 0 0 20px #34e89e;
+  }
+  100% {
+    box-shadow: 0 0 5px #34e89e;
+  }
+}
+
+button:hover {
+  animation: pulse 1s infinite;
+}
